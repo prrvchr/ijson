@@ -7,6 +7,10 @@
   This tool should be useful for new users
   who are usually confused with how to use the library,
   and the prefix in particular.
+* Fixed bug in ``yajl2_c`` backend introduced in 3.1.2
+  where random crashes could occur
+  due to an unsafe reference decrement
+  when constructing the parse/items/kvitems generators (#66).
 * Mark Python 3.10 as explicitly supported.
 
 ## [3.1.4]
