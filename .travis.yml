@@ -47,6 +47,9 @@ env:
     - CIBW_BEFORE_ALL="bash -c 'cmake --help || yum install -y cmake; cd \"{project}\"; sh .github/tools/install_yajl.sh'"
     - CIBW_TEST_COMMAND="bash -c 'cd \"{project}\"; pytest -vv'"
     - CIBW_ENVIRONMENT_WINDOWS="IJSON_EMBED_YAJL=1"
+    - CIBW_ENVIRONMENT_MACOS="IJSON_EMBED_YAJL=1"
+    - CIBW_ARCHS_MACOS="x86_64 arm64 universal2"
+    - CIBW_TEST_SKIP='*macosx_arm64 *universal2:arm64'
     - TWINE_USERNAME=__token__
 
 _cibuildwheel: &cibuildwheel
@@ -99,7 +102,7 @@ jobs:
     - name: mac wheels build
       <<: *cibuildwheel
       os: osx
-      osx_image: xcode10.2
+      osx_image: xcode12.2
       language: shell
     # and a windows build
     - name: windows wheels build

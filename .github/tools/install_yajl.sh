@@ -10,10 +10,10 @@ install_unix() {
 OS="`uname -s`"
 echo "Building libyajl on $OS"
 case "$OS" in
-	MSYS_*|MINGW_*)
-		echo "No extra step required in Windows"
+	MSYS_*|MINGW_*|Darwin)
+		echo "No extra step required in Windows or macOS"
 		;;
-	Darwin|Linux)
+	Linux)
 		install_unix
 		;;
 esac
