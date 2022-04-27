@@ -1,7 +1,7 @@
 version: ~> 1.0
 
 language: python
-dist: xenial
+dist: focal
 addons:
   apt:
     packages: [libyajl-dev]
@@ -71,20 +71,18 @@ jobs:
     - python: "2.7"
       env: YAJL_VERSION=1.0.12
     - python: "2.7"
-    - python: "3.4"
-      env: YAJL_VERSION=1.0.9
-    - python: "3.4"
     - python: "3.5"
       env: UPLOAD_C_COVERAGE=yes
     - python: "3.5"
       env: YAJL_VERSION=cant_find_it
     - python: "3.6"
+      env: YAJL_VERSION=1.0.9
     - python: "3.7"
     - python: "3.7"
       env: YAJL_VERSION=none
     - python: "3.8"
     - python: "3.9"
-    - python: "3.10-dev"
+    - python: "3.10"
 
     #build wheels
     - name: linux wheels build
