@@ -11,7 +11,7 @@
   where random crashes could occur
   due to an unsafe reference decrement
   when constructing the parse/items/kvitems generators (#66).
-* Mark Python 3.10 as explicitly supported.
+* Mark Python 3.10 and 3.11 as explicitly supported.
 
 ## [3.1.4]
 
