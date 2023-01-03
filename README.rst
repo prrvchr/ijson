@@ -432,12 +432,12 @@ Backends
 Ijson provides several implementations of the actual parsing in the form of
 backends located in ijson/backends:
 
-- ``yajl2_c``: a C extension using `YAJL <http://lloyd.github.com/yajl/>`_ 2.x.
+- ``yajl2_c``: a C extension using `YAJL <http://lloyd.github.com/yajl/>`__ 2.x.
   This is the fastest, but *might* require a compiler and the YAJL development files
   to be present when installing this package.
   Binary wheel distributions exist for major platforms/architectures to spare users
   from having to compile the package.
-- ``yajl2_cffi``: wrapper around `YAJL <http://lloyd.github.com/yajl/>`_ 2.x
+- ``yajl2_cffi``: wrapper around `YAJL <http://lloyd.github.com/yajl/>`__ 2.x
   using CFFI.
 - ``yajl2``: wrapper around YAJL 2.x using ctypes, for when you can't use CFFI
   for some reason.
@@ -599,7 +599,7 @@ the maintenance of the project and the PyPI ownership.
 Python parser in ijson is relatively simple thanks to `Douglas Crockford
 <http://www.crockford.com/>`_ who invented a strict, easy to parse syntax.
 
-The `YAJL <https://lloyd.github.io/yajl>`_ library by `Lloyd Hilaiel
+The `YAJL <https://lloyd.github.io/yajl>`__ library by `Lloyd Hilaiel
 <http://lloyd.io/>`_ is the most popular and efficient way to parse JSON in an
 iterative fashion.
 

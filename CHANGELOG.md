@@ -1,5 +1,11 @@
 # Changelog
 
+## Development version
+
+* Fixed minor README rendering issues
+  that prevented upload of 3.2.0 distributions
+  to PyPI.
+
 ## [3.2.0]
 
 * New ``ijson.dump`` command-line utility
