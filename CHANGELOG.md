@@ -1,6 +1,6 @@
 # Changelog
 
-## Development version
+## [3.2.0.post0]
 
 * Fixed minor README rendering issues
   that prevented upload of 3.2.0 distributions
@@ -299,3 +299,4 @@
 [3.1.3]: https://github.com/ICRAR/ijson/releases/tag/v3.1.3
 [3.1.4]: https://github.com/ICRAR/ijson/releases/tag/v3.1.4
 [3.2.0]: https://github.com/ICRAR/ijson/releases/tag/v3.2.0
+[3.2.0.post0]: https://github.com/ICRAR/ijson/releases/tag/v3.2.0.post0
