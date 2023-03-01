@@ -248,7 +248,7 @@ before full item parsing:
 
   parse_events = ijson.parse(io.BytesIO(b'["skip", {"a": 1}, {"b": 2}, {"c": 3}]'))
   while True:
-      prefix, event, value = next(parse_event)
+      prefix, event, value = next(parse_events)
       if value == "skip":
           break
   for obj in ijson.items(parse_events, 'item'):
