@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-import ijson
+from . import __init__ as ijson
 from . import compat
 
 

@@ -4,7 +4,7 @@ Pure-python parsing backend.
 from json.decoder import scanstring
 import re
 
-from ijson import common, utils
+from .. import common, utils
 import codecs
 
 
