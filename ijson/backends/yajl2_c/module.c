@@ -107,7 +107,7 @@ MOD_INIT(_yajl2)
 	INIT_ENAME(end_array);
 
 	// Import globally-used names
-	PyObject *ijson_common = PyImport_ImportModule("ijson.common");
+	PyObject *ijson_common = PyImport_ImportModuleLevel("common", PyModule_GetDict(m), NULL, NULL, 2);
 	PyObject *decimal_module = PyImport_ImportModule("decimal");
 	X_N(ijson_common, MOD_VAL(NULL));
 	X_N(decimal_module, MOD_VAL(NULL));
